@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チーム開発体験 - お問い合わせ</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="team.html">チーム紹介</a>
+        <a href="contact.html">お問い合わせ</a>
+    </nav>
+    
+    <div class="container">
+        <h1>お問い合わせ</h1>
+        <p>ご質問やご意見がございましたら、以下のフォームからお気軽にお問い合わせください。</p>
+        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">お名前 *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">メールアドレス *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">件名 *</label>
+                <select id="subject" name="subject" required>
+                    <option value="">選択してください</option>
+                    <option value="general">一般的なお問い合わせ</option>
+                    <option value="bug">バグ報告</option>
+                    <option value="feature">機能要望</option>
+                    <option value="other">その他</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">メッセージ *</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit">送信</button>
+        </form>
+        
+        <div id="successMessage" class="success-message">
+            お問い合わせありがとうございます。内容を確認の上、担当者よりご連絡いたします。
+        </div>
+    </div>
+</body>
+</html> 
